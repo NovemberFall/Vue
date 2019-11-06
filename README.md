@@ -41,6 +41,31 @@ firebase + online chat
 ![](img/2019-11-06-10-08-50.png)
 - choose `web`
 - copy and paste
+```js
+// Your web app's Firebase configuration
+var firebaseConfig = {
+    apiKey: "AIzaSyD-VyAXCSh-4cyp4FWLflbNF6R1-BMTkhE",
+    authDomain: "music-online-chat.firebaseapp.com",
+    databaseURL: "https://music-online-chat.firebaseio.com",
+    projectId: "music-online-chat",
+    storageBucket: "music-online-chat.appspot.com",
+    messagingSenderId: "34846148953",
+    appId: "1:34846148953:web:633d14870d629b85036448"
+};
+// Initialize Firebase
+firebase.initializeApp(firebaseConfig);
+```
 ![](img/2019-11-06-10-10-56.png)
 ---
 
+
+### Firestore Setup
+- create a new foler `firebase`
+- create a new init.js
+![](img/2019-11-06-10-50-16.png)
+---
+- copy this codes into init.js
+![](img/2019-11-06-10-51-41.png)
+---
+- then run `npm install firebase --save`
+---
