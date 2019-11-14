@@ -1,4 +1,7 @@
 # Vue
+### how to run VUE
+- `npm run dev`
+
 
 ### vue-cli
 - `npm install -g @vue/cli`
@@ -15,7 +18,11 @@
 - choose use NPM
 
 
-
+### how to run vue.js
+- cd to the project folder
+- `npm run dev`
+![](img/2019-11-06-11-22-09.png)
+---
 
 
 
@@ -67,5 +74,5 @@ firebase.initializeApp(firebaseConfig);
 - copy this codes into init.js
 ![](img/2019-11-06-10-51-41.png)
 ---
-- then run `npm install firebase --save`
+- then run `npm install firebase@4.13`
 ---
