@@ -2,6 +2,9 @@
 ### how to run VUE
 - `npm run dev`
 
+### if you want to change port:
+- `npm run serve -- --port 3000`
+
 
 ### vue-cli
 - `npm install -g @vue/cli`
