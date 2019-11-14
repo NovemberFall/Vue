@@ -210,3 +210,109 @@ textarea.materialize-textarea {
 ```
 ---
 
+- Welcome.vue
+```js
+<script>
+export default {
+  name: 'Welcome',
+  data () {
+    return {
+      name: null
+    }
+  },
+  methods:{
+    enterChat(){
+      console.log(this.name)
+    }
+  }
+}
+</script>
+```
+![](img/2019-11-14-09-08-06.png)
+- when you input the name, it will console
+---
+
+### Passing Props Via Routes
+- create Chat component
+```js
+<template>
+    <div class="chat container">
+        <h2>Chat</h2>
+    </div>
+</template>
+
+
+<script>
+export default {
+    name: 'Chat',
+    data(){
+        return{
+            
+        }
+    }    
+}
+</script>
+
+<style>
+
+
+</style>
+```
+- import chat component
+- index.js
+```js
+import Vue from 'vue'
+import Router from 'vue-router'
+import Welcome from '@/components/Welcome'
+import Chat from '@/components/Chat'
+
+Vue.use(Router)
+
+export default new Router({
+  routes: [
+    {
+      path: '/',
+      name: 'Welcome',
+      component: Welcome
+    },
+    {
+      path: '/chat',
+      name: 'Chat',
+      component: Chat
+    }
+  ]
+})
+```
+![](img/2019-11-14-09-36-54.png)
+---
+
+- update welcome.vue
+```js
+<script>
+export default {
+  name: 'Welcome',
+  data () {
+    return {
+      name: null,
+      feedback: null
+    }
+  },
+  methods:{
+    enterChat(){
+      if (this.name){
+        this.$router.push({name: 'Chat'})
+      }else{
+        this.feedback = 'You must enter a name to join'
+      }
+    }
+  }
+}
+</script>
+```
+- when input name, router to Chat componen
+![](img/2019-11-14-10-09-34.png)
+---
+
+
+
+
