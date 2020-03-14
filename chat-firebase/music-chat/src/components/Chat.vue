@@ -1,6 +1,9 @@
 <template>
     <div class="chat container">
-        <h2>Chat {{this.name}}</h2>
+        <h2>{{this.name}}</h2>
+        <h2>
+            <a href="https://novemberfall.github.io/musicChat/" class="navItemLink">Chat to me</a>
+        </h2>
     </div>
 </template>
 
@@ -19,6 +22,9 @@ export default {
 
 <style>
 h2{
+    color: #ffffff;
+}
+a{
     color: #ffffff;
 }
 

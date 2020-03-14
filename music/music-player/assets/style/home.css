@@ -1,0 +1,31 @@
+.phone{
+    margin: 60px auto;
+    border: 2px solid #ffffff;
+    width:355px;
+    height:760px;
+    border-radius: 45px;
+}
+.speaker{
+    border: 1px solid #ccc;
+    width: 60px;
+    height: 4px;
+    margin: 20px auto;
+    border-radius: 4px;
+    background: #333;
+}
+.screen{
+    /* border: 1.3px solid #333; */
+    border: 1.3px solid #ffffff;
+    border-top: 1.3px solid #cccccc;
+    /* border-top: 1.3px solid #ffffff; */
+    height: 86%;
+    margin: 0 auto;
+}
+.homeBtn{
+    border: 2px solid #333;
+    width: 40px;
+    height: 40px;
+    margin: 6px auto;
+    border-radius: 40px;
+}
+
